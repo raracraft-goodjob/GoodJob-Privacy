@@ -1,40 +1,89 @@
-# 개인정보처리방침 (Privacy Policy)
+# Privacy Policy
 
-**GoodJob** (이하 '본 앱')은(는) 사용자의 개인정보를 중요하게 생각하며, 관련 법령을 준수하기 위해 최선을 다하고 있습니다. 본 개인정보처리방침은 본 앱이 어떠한 정보를 수집하고 어떻게 활용하는지 설명합니다.
+**GoodJob** ("the App") takes your privacy seriously and is committed to complying with applicable data protection laws. This Privacy Policy explains what information the App collects and how it is used.
 
-### 1. 개인정보의 수집 및 이용 목적
-본 앱은 다음과 같은 목적으로 최소한의 정보를 수집하고 이용합니다.
-* **서비스 제공 및 관리:** 일정 및 할 일 목록 관리 기능 제공.
-* **구독 및 결제 처리:** 구글 플레이 빌링 시스템(Google Play Billing)을 통한 구독 상태 확인 및 결제 내역 관리.
-* **고객 지원:** 사용자 문의 응대 및 서비스 개선.
+---
 
-### 2. 수집하는 개인정보의 항목
-본 앱은 사용자의 민감한 정보를 직접 서버에 저장하지 않는 것을 원칙으로 합니다.
-* **기기 정보:** 서비스 최적화 및 오류 분석을 위한 기기 모델명, OS 버전, 광고 식별자(ADID).
-* **결제 데이터:** 구글 플레이를 통해 발생하는 결제 승인 번호, 구독 여부 (카드 번호 등 상세 결제 수단 정보는 본 앱에 전달되지 않으며 구글에서 직접 관리합니다).
-* **사용자 생성 데이터:** 사용자가 앱 내에 입력한 일정 및 할 일 데이터 (해당 데이터는 사용자의 기기 내 로컬 DB에 저장되는 것을 기본으로 합니다).
+### 1. Purpose of Collection and Use
 
-### 3. 제3자 서비스 제공 및 데이터 전송
-본 앱은 서비스 품질 향상 및 기술적 구현을 위해 다음과 같은 외부 서비스를 이용할 수 있습니다.
-* **Google Play Services:** 앱의 핵심 기능 실행 및 구글 로그인(선택 시).
-* **Google Play Billing:** 인앱 결제 및 정기 구독 처리.
-* **Firebase (Analytics/Crashlytics):** 앱 사용 통계 분석 및 오류 모니터링 (익명화된 정보).
+The App collects minimal information for the following purposes:
 
-### 4. 데이터 보안 및 보관 기간
-* 본 앱은 사용자의 데이터를 안전하게 보호하기 위해 암호화 통신 등 표준 보안 절차를 준수합니다.
-* 사용자가 앱을 삭제하거나 구독을 해지하는 경우, 관련 법령에 따라 일정 기간 보관 후 지체 없이 파기합니다.
+- **Service delivery:** Providing schedule and to-do list management features.
+- **Notifications & reminders:** Sending alerts for user-configured schedules.
+- **Place search:** Enabling map and place search when adding a location to a schedule.
+- **AI schedule parsing:** Converting natural-language input into structured schedule data using an AI service.
+- **Cloud backup / sync:** Backing up and restoring schedule data via Google Drive (optional, user-initiated).
+- **Subscription & billing:** Verifying subscription status and managing billing through Google Play Billing.
+- **Customer support:** Responding to inquiries and improving the service.
 
-### 5. 데이터 삭제 요청 및 사용자의 권리
-사용자는 언제든지 자신의 개인정보 및 앱 내 데이터를 관리할 수 있는 권리가 있습니다.
-* **데이터 삭제:** 앱 내 설정에서 데이터를 초기화하거나 앱을 삭제하여 기기 내 데이터를 제거할 수 있습니다.
-* **삭제 요청:** 아래 기재된 개발자 연락처를 통해 개인정보 삭제를 요청하시면 지체 없이 조치하겠습니다.
+---
 
-### 6. 개인정보처리방침의 변경
-본 방침은 법령 또는 서비스 변경에 따라 수정될 수 있습니다. 변경 사항이 있을 경우 앱 내 공지 또는 스토어 등록정보를 통해 알립니다.
+### 2. Information We Collect
 
-### 7. 개발자 연락처 (Contact Us)
-본 앱의 개인정보 처리와 관련하여 문의 사항이 있으시면 아래로 연락해 주시기 바랍니다.
+The App does not store sensitive personal information on external servers as a matter of principle.
 
-* **개발자:** Raracraft
-* **이메일:** raracraft.goodjob@gmail.com
-* **패키지명:** com.raracraft.todo.schedule
+- **Device information:** Device model, OS version, and advertising identifier (ADID) for optimization and crash analysis.
+- **Billing data:** Payment authorization tokens and subscription status via Google Play. Detailed payment method information (e.g., card numbers) is managed solely by Google and is never transmitted to the App.
+- **User-generated data:** Schedule and to-do data entered by the user. This data is stored in a local on-device database by default. When Google Drive sync is enabled, an encrypted backup is uploaded to the user's app-specific Drive storage (`appDataFolder`), which is inaccessible to other apps.
+- **AI-processed data:** When using the voice or natural-language schedule input feature, the entered text is sent to the Google Gemini API for processing. Google's Privacy Policy applies.
+
+---
+
+### 3. App Permissions
+
+The App may request the following permissions:
+
+| Permission | Purpose |
+|---|---|
+| **Notifications** | Send schedule reminders and alerts. |
+| **Microphone** (`RECORD_AUDIO`) | Record voice input for AI-powered schedule entry. Audio is processed by Gemini AI and is not stored. |
+| **Display over other apps** (`SYSTEM_ALERT_WINDOW`) | Show schedule information on the lock screen when the lock screen feature is enabled. |
+| **Run at startup** (`RECEIVE_BOOT_COMPLETED`) | Restore scheduled alarms after a device reboot. |
+| **Read phone state** (`READ_PHONE_STATE`) | Automatically dismiss the App's lock screen when an incoming call is detected, so calls are never blocked. No call content or personal identifiers are collected. |
+
+---
+
+### 4. Third-Party Services
+
+The App uses the following third-party services to deliver and improve its features:
+
+- **Google Play Services** — Core functionality and optional Google Sign-In.
+- **Google Play Billing** — In-app purchases and recurring subscriptions.
+- **Google Maps / Places API** — Map display and place search. [Google Privacy Policy](https://policies.google.com/privacy)
+- **Google Calendar API** — Fetching public holiday data.
+- **Google Drive API** — App-specific backup storage (`appDataFolder`). Inaccessible to other apps or third parties.
+- **Google Gemini AI** — Natural-language and voice schedule parsing. [Google Privacy Policy](https://policies.google.com/privacy)
+- **Kakao SDK** — Place search (REST API) and map display (WebView). [Kakao Privacy Policy](https://www.kakao.com/policy/privacy)
+- **Firebase (Analytics / Crashlytics)** — Anonymized usage analytics and crash monitoring.
+
+---
+
+### 5. Data Security & Retention
+
+- The App follows standard security practices including encrypted communication to protect user data.
+- Google Drive backup data is removed from app-specific storage when the user disables sync or uninstalls the App.
+- Upon app deletion or subscription cancellation, data is deleted without delay after any retention period required by applicable law.
+
+---
+
+### 6. Your Rights & Data Deletion
+
+You have the right to manage your personal information and in-app data at any time:
+
+- **On-device deletion:** Reset data in the App's settings or uninstall the App to remove all local data.
+- **Cloud data deletion:** Disconnect Google Drive or delete app data through your Google account to remove backup data.
+- **Deletion requests:** Contact us via the information below and we will respond promptly.
+
+---
+
+### 7. Changes to This Policy
+
+This policy may be updated to reflect changes in law or service features. Any changes will be announced via in-app notice or the store listing.
+
+---
+
+### 8. Contact
+
+- **Developer:** Raracraft
+- **Email:** raracraft.goodjob@gmail.com
+- **Package:** com.raracraft.todo.schedule.goodjob
