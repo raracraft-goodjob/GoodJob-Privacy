@@ -90,9 +90,9 @@ This policy may be updated to reflect changes in law or service features. Any ch
 
 
 
+---
 
-
-## Data Deletion Policy
+# Data Deletion Policy
 
 ### How to delete your data from GoodJob
 GoodJob stores your schedule and task data in your private Google Drive 'App Data Folder' to ensure security and privacy. Because this data is stored in your private storage, we (the developers) do not have direct access to delete your data on your behalf.
