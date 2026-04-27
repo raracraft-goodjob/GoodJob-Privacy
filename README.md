@@ -86,7 +86,7 @@ This policy may be updated to reflect changes in law or service features. Any ch
 
 - **Developer:** Raracraft
 - **Email:** raracraft.goodjob@gmail.com
-- **Package:** com.raracraft.todo.schedule.goodjob
+- **Package:** com.raracraft.todo.schedule.goodjob.v2
 
 
 
