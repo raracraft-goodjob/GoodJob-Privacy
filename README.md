@@ -108,7 +108,7 @@ You can delete your data and revoke the app's access to your Google Drive by fol
 
 ### Contact for Data Deletion
 If you have any trouble with the process above or have further questions regarding your data, please feel free to contact us at:
-- **Email:** [나현종 님의 이메일 주소]
+- **Email:** raracraft.goodjob@gmail.com
 - **Subject:** "Account Deletion Request - GoodJob"
 
 We will respond to your request within 7 business days to assist you.
