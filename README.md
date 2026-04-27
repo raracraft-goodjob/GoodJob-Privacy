@@ -87,3 +87,28 @@ This policy may be updated to reflect changes in law or service features. Any ch
 - **Developer:** Raracraft
 - **Email:** raracraft.goodjob@gmail.com
 - **Package:** com.raracraft.todo.schedule.goodjob
+
+
+
+
+
+## Data Deletion Policy
+
+### How to delete your data from GoodJob
+GoodJob stores your schedule and task data in your private Google Drive 'App Data Folder' to ensure security and privacy. Because this data is stored in your private storage, we (the developers) do not have direct access to delete your data on your behalf.
+
+You can delete your data and revoke the app's access to your Google Drive by following these steps:
+
+1. Go to [Google Drive (drive.google.com)](https://drive.google.com/).
+2. Click on the **Settings (gear icon)** in the top right corner.
+3. Select **"Manage Apps"**.
+4. Find **"GoodJob"** in the list.
+5. Click **"Options"** and select **"Disconnect from Drive"**.
+6. This will permanently remove the app's access and the associated data from your Google Drive.
+
+### Contact for Data Deletion
+If you have any trouble with the process above or have further questions regarding your data, please feel free to contact us at:
+- **Email:** [나현종 님의 이메일 주소]
+- **Subject:** "Account Deletion Request - GoodJob"
+
+We will respond to your request within 7 business days to assist you.
