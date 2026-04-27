@@ -90,7 +90,7 @@ This policy may be updated to reflect changes in law or service features. Any ch
 
 
 
----
+-
 
 # Data Deletion Policy
 
